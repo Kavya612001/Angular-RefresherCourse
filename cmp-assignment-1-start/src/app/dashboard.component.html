@@ -1,0 +1,11 @@
+<p>Hello from Dashboard component</p>
+<!-- property binding -->
+<h1 [textContent]="loadState"></h1>
+<button (click)="loadState = 'Finished'">Click me</button>
+
+<hr>
+<label for="">Enter a value for the Load State</label>
+<!-- <input type="text" (input)="loadState = $event.target.value"> -->
+
+<!-- Two way binding -->
+<input type="text" [(ngModel)]="loadState">
